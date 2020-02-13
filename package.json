@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "gulp-autoprefixer": "^7.0.1",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "rateyo": "^2.3.5"
   }
 }
