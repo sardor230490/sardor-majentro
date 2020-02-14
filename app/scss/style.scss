@@ -62,7 +62,7 @@
    }
 
    a {
-     font-weight: 500;
+    @include f500; 
      color: #ffffff;
      font-size: 14px;
    }
@@ -83,14 +83,14 @@
    &-title {
      font-family: Roboto;
      font-size: 48px;
-     font-weight: 700;
+     @include f700; 
      line-height: 72px;
      margin-bottom: 30px;
    }
 
    &-text {
      font-size: 20px;
-     font-weight: 500;
+     @include f500; 
      line-height: 32px;
      margin-bottom: 34px;
    }
@@ -108,17 +108,18 @@
        height: 56px;
        border: 0em;
        font-size: 14px;
-       font-weight: 500;
+      
        outline: none;
        padding-left: 25px;
        padding-right: 60px;
        color: #000000;
-       font-weight: 500;
+       @include f500; 
+
 
        &:placeholder {
          color: #90a4ae;
          letter-spacing: 0.7px;
-         font-weight: 500;
+         @include f500; 
        }
      }
 
@@ -148,7 +149,7 @@
      padding: 12px 21px;
      border: 0;
      color: $bg;
-     font-weight: 500;
+     @include f500; 
      cursor: pointer;
 
      &+button {
@@ -202,7 +203,7 @@
  .products__item-title {
    display: block;
    font-size: 18px;
-   font-weight: 500;
+   @include f500; 
    color: $bg;
 
  }
@@ -210,13 +211,13 @@
  .products__item-category {
    color: $green;
    font-size: 14px;
-   font-weight: 500;
+   @include f500; 
    display: block;
  }
 
  .products__item-price {
    font-size: 20px;
-   font-weight: 700;
+   @include f700; 
    color: $bg;
  }
 
@@ -296,4 +297,67 @@ padding: 20px 30px;
       outline: none;
       cursor: pointer;
     }
+}
+
+// Advanteges 
+
+
+.advantages {
+  background-color:$bg;
+  padding: 110px 0;
+}
+.advantages__title {
+  color: #ffffff;
+}
+.advantages__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 83px;
+}
+.advantages__item {
+  max-width: 370px;
+  text-align: center; 
+  padding: 0 15px; 
+ 
+  &:hover{
+.advantages__item-img{
+  background-color: $green;
+
+}
+.lock {
+  margin-left: 20px;
+}
+.advantages__item-title{
+  color: $green;
+
+}
+.advantages__item-img {
+  g{
+    fill: #ffffff;
+  }
+}
+  }
+  &-img{
+    width: 114px;
+    height: 114px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    transition: all .5s;
+  }
+}
+.advantages__item-title {
+  font-size: 24px;
+  @include f500; 
+  color: #fff;
+  margin-bottom: 26px;
+  transition: all .5s;
+
+}
+.advantages__item-tex {
+font-size: 15px;
+line-height: 24px;
 }
