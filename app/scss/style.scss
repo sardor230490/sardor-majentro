@@ -337,16 +337,16 @@
    max-width: 370px;
    text-align: center;
    padding: 0 15px;
-
+   .lock {
+    margin-left: 20px;
+  }
    &:hover {
      .advantages__item-img {
        background-color: $green;
 
      }
 
-     .lock {
-       margin-left: 20px;
-     }
+    
 
      .advantages__item-title {
        color: $green;
@@ -428,3 +428,202 @@
    }
 
  }
+
+ // tutorial 
+ .tutorial {
+   padding: 70px 0 120px;
+}
+ 
+ 
+.tutorial__items {
+  display: flex;
+  justify-content: space-between;
+}
+.tutorial__item {
+  text-align: center;
+  max-width: 370px;
+  width: 100%;
+
+}
+.tutorial__item-img {
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+  min-height: 270px;
+}
+.tutorial__item-title {
+  font-size: 24px;
+line-height: 60px;
+@include f700;
+color: #263238;
+margin-top: 39px;
+}
+
+// footer
+
+.footer {
+  background-color: $bg;
+
+}
+.footer__copy{
+  border-top: 1px solid #424d53;
+}
+.footer__copy-text {
+  color: #919699;
+  text-align: center;
+  padding: 30px 0 ;
+  font-size: 15px;
+
+}
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 80px;
+}
+.footer__col{
+  max-width: 270px;
+  width: 100%;
+  &-menu{
+max-width: 220px;
+width: 100%;
+  }
+  &-title {
+    font-size: 22px;
+    list-style: 24px;
+    color: #ffffff;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: $green;
+      left: 2px;
+      bottom: 0;
+    
+
+    }
+  }
+  &-text{
+    color:#b7c3c8;
+    margin-bottom: 30px;
+  }
+  .footer__col-info{
+    margin-top: 18px;
+    color: #ffffff;
+    padding-left: 30px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "\e947";
+      font-family: $icom;
+      left: 0;
+      color: $green;
+      font-size: 18px;
+    }
+
+
+  }
+}
+.footer__col-info-phone{
+  
+  &::before {
+    content: "\f095" !important;
+
+  }
+}
+
+.footer__col-list {
+  a{
+    margin-bottom: 15px;
+    color: #b7c3c8;
+    padding-left: 22px;
+    position: relative;
+    &::before {
+      content: "\f105";
+      position: absolute;
+      font-family: $icom;
+      font-size: 18px;
+     left: 0;
+     color: $green;
+    }
+  }
+}
+.footer__form {
+   position: relative;
+  &-title{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+   
+  }
+  input {
+    
+    border: none;
+    background-color: #091216;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    height: 40px;
+    padding-left: 13px;
+    padding-right: 30px;
+    &::placeholder {
+      color: #697378;
+    }
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    width: 43px;
+    background-color: $green;
+    border: 0;
+    cursor: pointer;
+    &::before {
+      content: "\f124";
+      font-family: $icom;
+      color: #fff;
+      font-size: 20px;
+      
+    }
+  }
+  
+}
+.footer__social {
+  margin-bottom: 33px;
+  li{
+    display: inline-block;
+    & + li {
+      margin-left: 7px;
+    }
+  }
+  a{
+     width: 30px;
+    height: 30px;
+    background-image:url(../image/css_sprites.png);
+    
+  }
+}
+ 
+.link-facebook {
+  background-position: 0 0;
+}
+.link-twitter {
+  background-position: -31px -1px;
+}
+.link-youtube {
+  background-position: -1px -31px;
+}
+.link-pinterest {
+  background-position: -31px -31px;
+}
+.link-linkedin {
+  background-position: -61px -1px;
+}
