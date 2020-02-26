@@ -52,24 +52,73 @@ src: local('Roboto Bold'), local('Roboto-Bold'),
  -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-th-large:before {
+  content: "\f009";
+}
+.icon-th-list:before {
+  content: "\f00b";
+}
+.icon-eject:before {
+  content: "\f052";
+}
+.icon-chevron-up:before {
+  content: "\f077";
+}
+.icon-chevron-down:before {
+  content: "\f078";
+}
 .icon-shopping-cart:before {
- content: "\f07a";
+  content: "\f07a";
+}
+.icon-heart-o:before {
+  content: "\f08a";
 }
 .icon-phone:before {
- content: "\f095";
+  content: "\f095";
+}
+.icon-filter:before {
+  content: "\f0b0";
+}
+.icon-sort:before {
+  content: "\f0dc";
+}
+.icon-unsorted:before {
+  content: "\f0dc";
+}
+.icon-sort-desc:before {
+  content: "\f0dd";
+}
+.icon-sort-down:before {
+  content: "\f0dd";
+}
+.icon-sort-asc:before {
+  content: "\f0de";
+}
+.icon-sort-up:before {
+  content: "\f0de";
+}
+.icon-comment-o:before {
+  content: "\f0e5";
 }
 .icon-bolt:before {
- content: "\f0e7";
+  content: "\f0e7";
 }
 .icon-flash:before {
- content: "\f0e7";
+  content: "\f0e7";
 }
 .icon-angle-right:before {
- content: "\f105";
+  content: "\f105";
 }
 .icon-location-arrow:before {
- content: "\f124";
+  content: "\f124";
+}
+.icon-sort-amount-desc:before {
+  content: "\f161";
 }
 .icon-location:before {
- content: "\e947";
+  content: "\e947";
 }
+.icon-search:before {
+  content: "\e986";
+}
+
