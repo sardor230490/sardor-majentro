@@ -3,7 +3,9 @@
  @import "fonts";
 
 
-
+.header {
+  background-color:#fff;
+}
  .header__top-inner {
    display: flex;
    justify-content: space-between;
@@ -36,7 +38,8 @@
    background-color: $green;
  }
 
- .header__btn-reg {
+ .header__btn-reg,
+ .header__btn-logout {
    background-color: $red;
    margin-left: 7px;
  }
@@ -67,6 +70,280 @@
      font-size: 14px;
    }
  }
+ .header__box {
+   display: flex;
+   align-items:center;
+   
+ }
+ .header__cyrcles {
+   position: relative;
+   top: 10px;
+ }
+
+ .header-cyrcle {
+   &.active {
+     display: inline-block;
+   }
+   display: none;
+   width: 34px;
+   height: 34px;
+   border-radius: 50%;
+   background-color: #f5f5f5; 
+   position: relative;
+   &::before {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 14px;
+     color: #a0a0a0;
+   }
+ 
+   span { 
+     width: 18px;
+     height: 18px;
+     border-radius: 50%;
+     position: absolute;
+     right: -7px;
+     top: -7px;
+     text-align: center;
+     line-height: 18px;
+     font-size: 11px;
+     color: #fff;
+   }
+ }
+ .angle-right {
+   padding-left: 15px;
+   position: relative;
+   &::before {
+    content: "\f105";
+    position: absolute;
+    left: 0;
+    font-family: $icom;
+    font-size: 14px;
+    color:$green;
+
+   }
+ }
+ .header__btn-login--off {
+   display: none;
+ }
+ .header__btn-logout {
+   display: none;
+   &.header__btn-login--on {
+     display: block;
+   }
+ }
+.notification {
+  span {
+    background-color: #fcb322;
+  }
+}
+.massage {
+  span {
+    background-color: #ef6c00;
+  }
+}
+.basket {
+  margin-right: 20px;
+  span {
+    background-color: #b1d786;
+  }
+}
+.user{
+  margin-right: 20px;
+  padding-right: 20px;
+  position: relative;
+  &::before {
+    content: "\f078";
+    position: absolute;
+    right: 0;
+    right: 0;
+    font-family: $icom;
+    font-size: 16px;
+    color: #707070;
+  }
+
+&__inner {
+  display: flex;
+  align-items:center;  
+}
+&__img{
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+}
+.user__name{
+font-size: 14px;
+@include f700; 
+color: #222222;
+line-height: 24px;
+}
+.user__money {
+  color: #8bc34a;
+  @include f700;
+  font: 14px;
+  line-height: 24px;
+
+}
+.user__menu {
+border: 0px solid rgb(204, 204, 204);
+position: absolute;
+background-color:#fff;
+padding: 0 20px;
+width: 158px;
+position: absolute;
+top: 69px;
+left: 20px;
+height: 0;
+transition: all .3s;
+overflow: hidden;
+
+a{
+  font-size: 12px;
+  color: #546e7a;
+  margin-bottom: 15px;
+}
+}
+.circle__menu {
+  position: absolute;
+  top: 69px;
+  z-index: 1;
+}
+.user__box,
+.basket__box, 
+.notification__box,
+.massage__box {
+  position: relative;
+  height: 90px;
+  margin-top: 40px;
+  &:hover {
+    .user__menu{
+      height: auto;
+      border-width: 1px;
+      padding: 20px;
+      overflow: auto;
+      
+    }
+  }
+}
+.circle__menu {
+  top: 62px;
+  right: 0;
+  border-top: 0px solid #e0e0e0;
+  height: 0;
+  overflow: hidden;
+  transition: all .3s;
+}
+.basket__box, 
+.notification__box,
+.massage__box {
+  margin-top: 55px;
+  margin-left: 15px;
+  &:hover{
+    .circle__menu {
+      height: auto;
+      overflow: hidden;
+      border-width:1px; 
+
+    }
+    .header-cyrcle::before{
+      color: $bg;
+    }
+    .circle__item  {
+      padding: 23px;
+      border-width: 1px;
+    }
+    .circle__info {
+      line-height: 18px;
+    }
+  }
+}
+
+.circle__item {
+  background-color: #fff;
+  border: 0px solid #e0e0e0;
+  border-top: none;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding: 0 23px; 
+  display: flex;
+  align-items:center; 
+  width: 269px;
+  position: relative;
+  transition: all .3s;
+  &::before {
+    position: absolute;
+    top: 26px;
+    right: 28px;
+    color: #b0bec5;
+    font-size: 16px;
+  }
+
+
+}
+.circle__img {
+  margin-right: 15px;
+}
+.circle__info-name {
+  @include f500;
+  color: $bg;
+}
+.circle__info-them {
+  font-size: 12px;
+  color: $green;
+}
+.circle__info-price {
+  @include  f500; 
+  font-size: 14px;
+  color: #000;
+}
+.circle__info-data {
+  font-size: 10px;
+  color: #707070;
+}
+.basket__summ {
+  padding: 16px 17px 12px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+.basket__title {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 22px;
+  margin-bottom: 15px;
+  @include f700; 
+  color: $bg;
+  font-size: 16px;
+}
+.basket__btn {
+  @include f500;
+  color: #fff;
+  padding: 12px 5px;
+  background-color: $green;
+  text-align: center;
+  font-size: 14px;
+  width: 100px;
+
+}
+.basket__btn--checkout {
+  margin-left: 4px;
+  width: 123px;
+  background-color: #e85647;
+
+}
+.icons-color::before {
+  color: $tomato;
+}
+.header__btn-menu, 
+.menu__btn{
+  display: none;
+}
 // search 
  .search {
    min-height: 532px;
@@ -1002,3 +1279,4 @@ background-color: $green;
 }
 }
 
+@import "media";
