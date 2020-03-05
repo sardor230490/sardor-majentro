@@ -7,6 +7,10 @@ $tomato:  #ef6c00;
 
 $icom: 'icomoon'; 
 
+@mixin f300 {
+ font-family: 'Roboto', sans-serif;
+ font-weight: 300;
+}
 @mixin f500 {
  font-family: 'Roboto', sans-serif;
  font-weight: 500;
