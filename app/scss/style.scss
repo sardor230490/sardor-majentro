@@ -2200,7 +2200,146 @@ span {
   border-radius: 4px;
   }
 }
-.hggh {
+
+// upload
+.upload__inner {
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 110px;
+}
+.upload__inner-title {
+  font-size: 24px;
+  color: $bg;
+  @include f500; 
+  padding: 16px 35px 18px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.upload__inner-content {
+  margin-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 45px;
 
 }
+
+.upload__inner-line {
+  display: flex;
+  margin-bottom: 30px;
+   
+   label {
+     margin-top: 5px;
+     color: #444;
+     width: 170px;
+     padding-right: 15px;
+   }
+   span {
+     color: $green;
+   }
+input, select, textarea{
+  display: block;
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #d7d7d7;
+  height: 40px;
+  padding: 0 18px;
+&::placeholder {
+  color: $tex-grey;
+}
+
+}
+textarea { 
+  min-height: 150px;
+  resize: none;
+  padding: 8px 18px;
+}
+.jq-selectbox {
+  width: 100%;
+}
+.jq-selectbox__select {
+    height: 40px; 
+    padding:  0 18px;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: #f9f9f9 ;
+    box-shadow: none;
+    color: $tex-grey;
+    font-family: 'Roboto', sans-serif;
+    line-height: 40px;
+
+    text-shadow: none;
+}
+.jq-selectbox__trigger-arrow {
+  border: none;
+  position: relative;
+  &::before {
+    content: "\f0dd";
+    font-family: $icom;
+    color: #444;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 29px;
+    transform: translate(-50%, -50%);
+  } 
+}
+.jq-selectbox__trigger {
+  border-left: none; 
+}
+.jq-file {
+  padding: 0 18px;
+  width: 100%;
+  border: 0;
+  box-shadow: none;
+  height: 40px; 
+  border-radius: 0;
+  background: #f9f9f9 ;
+  border: 1px solid #d7d7d7;
+}
+input[type='file'] {
+  outline: none;
+}
+.jq-file__name {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  border: none;
+  margin-left: 112px;
+  border-bottom-color: transparent;
+  border-radius: 0px;
+  background: transparent;
+  box-shadow: none;
+  line-height: 40px;
+  color: $tex-grey;
+  font-size: 12px;
+}
+.jq-file__browse {
+  top: 5px;
+  right: auto;
+  left: 9px;
+  padding: 0 12px;
+  border: 1px solid $tex-grey;
+  border-left: 1px solid $tex-grey;
+  line-height: 26px;
+  font-size: 12px;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: none;
+  text-shadow: none;
+  color: #444444;
+}
+}
+
+
+.upload-btn {
+  color: #fff;
+  background-color: $green;
+  display: inline-block;
+  padding: 15px 35px;
+  border: none;
+  margin-left: 144px;
+  cursor: pointer;
+
+}
+
 @import "media";

@@ -39,6 +39,7 @@ $('.product__one-tabs .tab, .tabs-settings .tab').on('click', function(event) {
       $('#'+id).addClass('active-tab').fadeIn();
       return false;
    });
+   $('input[type="file"], select').styler();
 
 $('.icon-th-large').on('click', function () {
    $('.products__item').removeClass('list')
@@ -50,6 +51,7 @@ $('.icon-th-large').on('click', function () {
  $('.header__btn-menu').on('click', function() {
     $('.header__box').toggleClass('active');
  });
+
 
 var mixer = mixitup('.products__inner-box');
 });
