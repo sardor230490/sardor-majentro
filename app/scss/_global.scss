@@ -90,6 +90,8 @@ body {
 .breadcrumbs {
   &__inner{
     padding: 45px 0 40px;
+    overflow: hidden;
+    width: 1020px;
   }
 &__list{
   li{
@@ -115,4 +117,10 @@ body {
     color: #b0bec8;
   }
 }
+}
+.breadcrumbs__inner {
+  overflow: hidden;
+}
+#modal {
+  display: none;
 }
